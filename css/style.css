@@ -1,4 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+}
 h1{
     font-size: 60px;
     color: tomato;
-}]
+}
+#circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: hotpink;
+    border-radius: 50%;
+}
+#circle::before{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 30%;
+    background: #fff;
+    border-radius: 50%;
+    top: 30px;
+    left: 20px;
+}
+#circle::after{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 30%;
+    background: #fff;
+    border-radius: 50%;
+    top: 30px;
+    right: 20px;
+}
+.eyeballs{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    top: 40%;
+    left: 50px;
+}
+.eyeballs::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    left: 40px;
+    z-index: 1;
+}
+.mouth{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    top: 55%;
+    left: 40px;
+    border-radius: 0px 0px 50px 50px;
+    overflow: hidden;
+}
+.mouth::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(#fff,red);
+    border-radius: 50%;
+    left: 20px;
+    top: 13px;
+}
