@@ -103,7 +103,7 @@ body{
 .content .box{
     width: 50%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .content .box img{
     position: relative;
@@ -239,4 +239,100 @@ body{
     top: 20px;
     font-size: 30px;
     margin: 0px 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background: lightblue;
+    }
+    .navbar{
+        height: 5%;
+    }
+    .navbar .menu{
+        opacity: 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .box{
+        top: 10px;
+        left: 90px;
+        position: relative;
+        margin-bottom: 80px;
+        top: 20px;
+        width: 66.5%;
+        height: 50%;
+    }
+    .content .box img{
+        top: 0px;
+        width: 292px;
+    }
+    #container{
+        top: 0px;
+        height: 1200px;
+
+    }
+    #container::before{
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 100%;
+    background: lightblue;
+    border-right: 2px solid rgb(0, 0, 0,0.1);
+}
+.nxtimg{
+    left: 116px;
+    bottom: 503px;
+    width: 57.5%;
+    height: 5%;
+}
+.nxtimg .prg .pg1{
+    width: 40px;
+    height: 5px;
+    background: rgb(169, 135, 48);
+}
+.nxtimg .prg .cc{
+    background: rgb(80, 80, 80);
+}
+.nxtimg .prg .cc::before{
+    position: absolute;
+    content: '02';
+    color: rgb(169, 135, 48);
+    left: 50px;
+    font-size: 20px;
+}
+.nxtimg .nxtbtn .fa{
+    margin: 0px 15px;
+}
+.text{
+    bottom: 50px;
+    position: relative;
+    right: 40px;
+}
+.text h1{
+    position: relative;
+    bottom: 15px;
+    font-size: 80px;
+}
+.text p{
+    position: relative;
+    font-size: 22px;
+    bottom: 40px;
+    left: 25px;
+}
+.text a{
+    position: relative;
+    bottom: 10px;
+    font-size: 22px;
+}
+.boxbtn{
+    left: 17px;
+    top: 60px;
+    width: 350px;
+    font-size: 18px;
+}
+.text h2{
+   top: 65px;
+   font-size: 20px;
+}
 }
