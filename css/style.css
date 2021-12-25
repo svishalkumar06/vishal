@@ -1,4 +1,192 @@
-h1{
-    font-size: 60px;
-    color: tomato;
-}]
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(250, 178, 6);
+    line-height: 1.6rem;
+    position: relative;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 10px 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;    
+    margin:50px 40px;
+    box-shadow: 5px 5px 80px rgb(0,0,0,0.6);
+}
+#header .toolbar ul{
+    display: flex;
+    height: 85vh; 
+    width: 18vw; 
+    justify-content: space-around; 
+    padding-top: 2rem;
+}
+#header .toolbar ul i{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+#header .navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 85vh; 
+    width: 72vw;
+    background: #fff;
+}
+#header .navbar ul li{
+    margin: 10px 20px;
+    padding: 20px;
+}
+#header .navbar ul li a{
+    font-size: 1.2rem;
+}
+#header .navbar ul li a.current{
+    background: linear-gradient(#fff,rgb(250, 178, 6));
+}
+#header .navbar ul li a:hover{
+    background: linear-gradient(#fff,rgb(250, 178, 6));
+}
+#main-content{
+    position: absolute;
+    display: flex;
+    left: 7rem;
+    top: 7rem;
+
+}
+#main-content .profile-img {
+    width: 31rem;
+    height: 25rem;
+}
+#main-content .profile-img img {
+    width: 100%;
+    height: 100%;
+}
+#main-content .profile-content{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+#main-content .profile-content h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 670;
+}
+#main-content .profile-content p{
+    line-height: 1.7em;
+    color: rgb(192,192,192);
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 400;
+    width: 600px;
+}
+.btnRead{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(0, 0,0) !important;
+}
+.triangle i{
+  padding-left: 10px;
+  vertical-align: -1px;
+}
+#main-content .profile-content h6{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.subscribe{
+    display: flex;
+    width: 600px;
+    flex: 1;
+    margin-top: 1rem;
+    background: rgb(250, 178, 6);
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.6);
+}
+.subscribe p{
+    flex-basis: 30%;
+    text-align: center;
+    color: #000 !important;
+
+}
+
+.subscribe input{
+    flex-basis: 70%;
+    text-align: center;
+    border: none;
+    font-size: 1.0rem;
+    color: #333;
+    font-weight: 700;
+
+}
+.subscribe input:focus{
+    outline: none;
+}
+.img-footer{
+    display: flex;
+}
+.img-footer{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 496px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.img-footer .pic-slider{
+    flex-basis: 65%;
+    height: 100%;
+    text-align: center;
+}
+.img-footer .pic-slider .slider{
+    width: 114px;
+    height: 3px;
+    background: #876411;
+    position: relative;
+    left: 45px;
+    top: 29px;
+}
+.img-footer .pic-slider .slider::before{
+    content: '01';
+    position: relative;
+    left: -76px;
+    top: -12px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fab206;
+}
+.img-footer .pic-slider .slider.right{
+    background: #585757;
+    left: 159px;
+    top: 26px;
+}
+.img-footer .pic-slider .slider.right::before{
+    content: '02';
+    position: relative;
+    left: 76px;
+    top: -12px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fab206;
+}
+.img-footer .pic-slider-btn{
+    flex-basis: 35%;
+    text-align: center;
+    height: 100%;
+    background: rgb(250, 178, 6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
