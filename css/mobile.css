@@ -34,11 +34,11 @@
     flex-direction: column;
 }
 #main-content .profile-img {
-    width: 25rem;
+    width: 90%;
     height: 25rem;
 }
 .img-footer {
-    width: 400px;
+    width: 90%;
     left: 0;
     top: 34%;
 }
